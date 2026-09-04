@@ -2,221 +2,206 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Umoja youth Group Election 2026</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Youth Group Election 2026</title>
 
 <style>
-*{
-    box-sizing:border-box;
-}
+*{box-sizing:border-box}
 
 body{
-    margin:0;
-    font-family:Arial,Helvetica,sans-serif;
-    background:#eef2f7;
-    color:#172033;
+margin:0;
+font-family:Arial,sans-serif;
+background:#eef2f7;
+color:#172033;
 }
 
 header{
-    background:#123b70;
-    color:white;
-    text-align:center;
-    padding:28px 15px;
+background:#123b70;
+color:white;
+text-align:center;
+padding:25px 15px;
 }
 
 header h1{
-    margin:0;
-    font-size:27px;
+margin:0;
+font-size:25px;
 }
 
 header p{
-    margin:8px 0 0;
+margin:7px 0 0;
 }
 
 .container{
-    max-width:850px;
-    margin:25px auto;
-    padding:0 15px;
+max-width:850px;
+margin:22px auto;
+padding:0 14px;
 }
 
 .card{
-    background:white;
-    border-radius:16px;
-    padding:22px;
-    margin-bottom:20px;
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
+background:white;
+border-radius:15px;
+padding:21px;
+margin-bottom:18px;
+box-shadow:0 5px 18px rgba(0,0,0,.08);
 }
 
 h2{
-    margin-top:0;
+margin-top:0;
 }
 
 label.title{
-    display:block;
-    font-weight:bold;
-    margin:15px 0 7px;
+display:block;
+font-weight:700;
+margin:14px 0 7px;
 }
 
 select,
-input[type="password"]{
-    width:100%;
-    padding:13px;
-    border:1px solid #cbd5e1;
-    border-radius:9px;
-    font-size:16px;
+input{
+width:100%;
+padding:13px;
+border:1px solid #cbd5e1;
+border-radius:9px;
+font-size:16px;
 }
 
 button{
-    width:100%;
-    padding:14px;
-    border:0;
-    border-radius:9px;
-    background:#1769d1;
-    color:white;
-    font-size:16px;
-    font-weight:bold;
-    margin-top:15px;
-    cursor:pointer;
+width:100%;
+padding:14px;
+border:0;
+border-radius:9px;
+background:#1769d1;
+color:#fff;
+font-size:16px;
+font-weight:700;
+margin-top:14px;
+cursor:pointer;
 }
 
-button:hover{
-    opacity:.9;
+button.secondary{
+background:#475569;
+}
+
+button.danger{
+background:#b42318;
 }
 
 .hidden{
-    display:none;
+display:none;
 }
 
 .msg{
-    font-weight:bold;
-    margin-top:14px;
+font-weight:700;
+margin-top:12px;
 }
 
 .note{
-    color:#64748b;
-    font-size:14px;
+color:#64748b;
+font-size:14px;
 }
 
 .position{
-    border:1px solid #dbe2ea;
-    border-radius:12px;
-    padding:17px;
-    margin:17px 0;
+border:1px solid #dbe2ea;
+border-radius:12px;
+padding:16px;
+margin:15px 0;
 }
 
 .position h3{
-    margin:0 0 12px;
+margin:0 0 10px;
 }
 
 .candidate{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    background:#f8fafc;
-    padding:13px;
-    border-radius:8px;
-    margin:8px 0;
-    cursor:pointer;
+display:flex;
+align-items:center;
+gap:10px;
+background:#f8fafc;
+padding:12px;
+border-radius:8px;
+margin:8px 0;
+cursor:pointer;
 }
 
 .candidate input{
-    width:18px;
-    height:18px;
+width:18px;
+height:18px;
 }
 
 .success{
-    background:#ecfdf5;
-    color:#047857;
-    padding:16px;
-    border-radius:10px;
-    font-weight:bold;
-}
-
-.secondary{
-    background:#475569;
-}
-
-.danger{
-    background:#b42318;
+background:#ecfdf5;
+color:#047857;
+padding:15px;
+border-radius:10px;
+font-weight:700;
 }
 
 .result{
-    border-bottom:1px solid #e2e8f0;
-    padding:15px 0;
+padding:14px 0;
+border-bottom:1px solid #e2e8f0;
 }
 
 .result:last-child{
-    border-bottom:0;
-}
-
-.vote-count{
-    font-weight:bold;
-    margin-top:5px;
+border-bottom:0;
 }
 
 .badge{
-    display:inline-block;
-    background:#e2e8f0;
-    padding:5px 9px;
-    border-radius:20px;
-    font-size:12px;
-    margin-left:5px;
+display:inline-block;
+background:#e2e8f0;
+padding:4px 8px;
+border-radius:15px;
+font-size:12px;
+margin-left:4px;
 }
 
-.table-wrap{
-    overflow-x:auto;
+.tablewrap{
+overflow:auto;
 }
 
 table{
-    width:100%;
-    border-collapse:collapse;
-    margin-top:12px;
-    font-size:13px;
+width:100%;
+border-collapse:collapse;
+font-size:12px;
 }
 
-th,
-td{
-    border:1px solid #dbe2ea;
-    padding:9px;
-    text-align:left;
+th,td{
+border:1px solid #dbe2ea;
+padding:8px;
+text-align:left;
+white-space:nowrap;
 }
 
 th{
-    background:#f1f5f9;
-}
-
-.admin-buttons{
-    display:flex;
-    gap:10px;
-}
-
-.admin-buttons button{
-    flex:1;
+background:#f1f5f9;
 }
 
 footer{
-    text-align:center;
-    padding:25px;
-    color:#64748b;
+text-align:center;
+padding:22px;
+color:#64748b;
+}
+
+.row{
+display:flex;
+gap:10px;
+}
+
+.row button{
+flex:1;
 }
 
 @media(max-width:600px){
 
-    header h1{
-        font-size:22px;
-    }
+header h1{
+font-size:21px;
+}
 
-    .card{
-        padding:17px;
-    }
+.card{
+padding:16px;
+}
 
-    .admin-buttons{
-        flex-direction:column;
-    }
+.row{
+flex-direction:column;
+}
 
-    table{
-        font-size:11px;
-    }
 }
 </style>
 </head>
@@ -224,1093 +209,1417 @@ footer{
 <body>
 
 <header>
-    <h1>🗳️ Youth Group Election 2026</h1>
-    <p>14-Member Online Voting System</p>
+
+<h1>🗳️ Youth Group Election 2026</h1>
+
+<p>14-Member Online Voting System</p>
+
 </header>
+
 
 <div class="container">
 
-<!-- =========================
-     MEMBER LOGIN
-========================= -->
 
-<div class="card" id="loginCard">
+<!-- MEMBER LOGIN -->
 
-    <h2>Member Login</h2>
+<section class="card" id="loginCard">
 
-    <p class="note">
-        Select your name and enter your personal PIN.
-    </p>
+<h2>Member Login</h2>
 
-    <label class="title">
-        Select Member
-    </label>
-
-    <select id="memberSelect">
-
-        <option value="">
-            -- Select your name --
-        </option>
-
-    </select>
+<p class="note">
+Select your name and enter your PIN.
+</p>
 
 
-    <label class="title">
-        PIN
-    </label>
-
-    <input
-        type="password"
-        id="memberPin"
-        placeholder="Enter your PIN"
-        inputmode="numeric"
-    >
+<label class="title">
+Select Member
+</label>
 
 
-    <button onclick="memberLogin()">
-        Continue to Voting
-    </button>
+<select id="memberSelect">
+
+<option value="">
+-- Select your name --
+</option>
+
+</select>
 
 
-    <p id="loginMsg" class="msg"></p>
-
-</div>
-
-
-<!-- =========================
-     VOTING SECTION
-========================= -->
-
-<div class="card hidden" id="voteCard">
-
-    <h2>🗳️ Cast Your Vote</h2>
-
-    <p id="voterInfo"></p>
-
-    <p class="note">
-        Choose one candidate in every position.
-        You can submit your vote only once.
-    </p>
-
-    <form id="voteForm"></form>
-
-    <p id="voteMsg" class="msg"></p>
-
-</div>
+<label class="title">
+PIN
+</label>
 
 
-<!-- =========================
-     SUCCESS
-========================= -->
+<input
+id="memberPin"
+type="password"
+inputmode="numeric"
+placeholder="Enter PIN"
+>
 
-<div class="card hidden" id="doneCard">
 
-    <h2>✅ Vote Submitted</h2>
+<button id="loginBtn" type="button">
+Continue to Voting
+</button>
 
-    <div class="success">
 
-        Your vote has been recorded successfully.
+<p id="loginMsg" class="msg"></p>
 
-        <br><br>
+</section>
 
-        Thank you for participating in the
-        Youth Group Election.
 
-    </div>
 
-    <button
-        class="secondary"
-        onclick="location.reload()"
-    >
-        Return to Login
-    </button>
+<!-- VOTING -->
+
+<section class="card hidden" id="voteCard">
+
+<h2>🗳️ Cast Your Vote</h2>
+
+<p id="voterInfo"></p>
+
+<p class="note">
+Choose one candidate for every position,
+then submit once.
+</p>
+
+<form id="voteForm"></form>
+
+<p id="voteMsg" class="msg"></p>
+
+</section>
+
+
+
+<!-- SUCCESS -->
+
+<section class="card hidden" id="doneCard">
+
+<h2>✅ Vote Submitted</h2>
+
+<div class="success">
+
+Your vote has been recorded on this device.
+
+<br><br>
+
+Thank you for participating in the Youth Group Election.
 
 </div>
 
 
-<!-- =========================
-     ADMIN BUTTON
-========================= -->
+<button
+class="secondary"
+id="returnBtn"
+type="button"
+>
 
-<div class="card">
+Return to Login
 
-    <button
-        class="secondary"
-        onclick="adminLogin()"
-    >
-        🔐 Admin / View Results
-    </button>
+</button>
+
+</section>
+
+
+
+<!-- ADMIN -->
+
+<section class="card">
+
+<button
+class="secondary"
+id="adminBtn"
+type="button"
+>
+
+🔐 Admin / View Results
+
+</button>
+
+</section>
+
+
+
+<!-- ADMIN RESULTS -->
+
+<section class="card hidden" id="adminCard">
+
+<h2>🔐 Election Results</h2>
+
+<p id="voteCount"></p>
+
+<div id="results"></div>
+
+
+<h2>Member Choices</h2>
+
+<p class="note">
+This table shows each member's selected candidates.
+</p>
+
+
+<div
+class="tablewrap"
+id="choices"
+></div>
+
+
+<div class="row">
+
+<button
+id="exportBtn"
+type="button"
+>
+
+📥 Export Results
+
+</button>
+
+
+<button
+class="danger"
+id="resetBtn"
+type="button"
+>
+
+🗑️ Reset Election
+
+</button>
 
 </div>
 
+</section>
 
-<!-- =========================
-     ADMIN PANEL
-========================= -->
-
-<div class="card hidden" id="adminCard">
-
-    <h2>🔐 Election Results</h2>
-
-    <p id="voteCount"></p>
-
-    <div id="results"></div>
-
-
-    <h2>
-        Member Choices
-    </h2>
-
-    <p class="note">
-        This section shows which candidate each member selected.
-    </p>
-
-    <div
-        class="table-wrap"
-        id="choices"
-    ></div>
-
-
-    <div class="admin-buttons">
-
-        <button
-            onclick="exportResults()"
-        >
-            📥 Export Results
-        </button>
-
-        <button
-            class="danger"
-            onclick="resetElection()"
-        >
-            🗑️ Reset Election
-        </button>
-
-    </div>
-
-</div>
 
 </div>
 
 
 <footer>
-    Youth Group Election © 2026
+
+Youth Group Election © 2026
+
 </footer>
+
 
 
 <script>
 
-/* =====================================================
+"use strict";
+
+
+/* ==========================================
    14 MEMBERS
-   =====================================================
-
-   Members from your list.
-
-   You can change the PINs if you want.
-===================================================== */
+========================================== */
 
 const members = [
 
-    {
-        id: "M01",
-        name: "Enock Kiprono",
-        pin: "1001"
-    },
+{
+id:"M01",
+name:"Enock Kiprono",
+pin:"1001"
+},
 
-    {
-        id: "M02",
-        name: "Amos Kipngetich",
-        pin: "1002"
-    },
+{
+id:"M02",
+name:"Amos Kipngetich",
+pin:"1002"
+},
 
-    {
-        id: "M03",
-        name: "Emmanuel Kipngetich",
-        pin: "1003"
-    },
+{
+id:"M03",
+name:"Emmanuel Kipngetich",
+pin:"1003"
+},
 
-    {
-        id: "M04",
-        name: "Peter Kiprono",
-        pin: "1004"
-    },
+{
+id:"M04",
+name:"Peter Kiprono",
+pin:"1004"
+},
 
-    {
-        id: "M05",
-        name: "Tom Chepngat",
-        pin: "1005"
-    },
+{
+id:"M05",
+name:"Tom Chepngat",
+pin:"1005"
+},
 
-    {
-        id: "M06",
-        name: "Evans Kiplangat",
-        pin: "1006"
-    },
+{
+id:"M06",
+name:"Evans Kiplangat",
+pin:"1006"
+},
 
-    {
-        id: "M07",
-        name: "Joseph Rotich",
-        pin: "1007"
-    },
+{
+id:"M07",
+name:"Joseph Rotich",
+pin:"1007"
+},
 
-    {
-        id: "M08",
-        name: "Victor Korir",
-        pin: "1008"
-    },
+{
+id:"M08",
+name:"Victor Korir",
+pin:"1008"
+},
 
-    {
-        id: "M09",
-        name: "Gideon Kemboi",
-        pin: "1009"
-    },
+{
+id:"M09",
+name:"Gideon Kemboi",
+pin:"1009"
+},
 
-    {
-        id: "M10",
-        name: "Nathan Rotich",
-        pin: "1010"
-    },
+{
+id:"M10",
+name:"Nathan Rotich",
+pin:"1010"
+},
 
-    {
-        id: "M11",
-        name: "Brenda Chepngeno",
-        pin: "1011"
-    },
+{
+id:"M11",
+name:"Brenda Chepngeno",
+pin:"1011"
+},
 
-    {
-        id: "M12",
-        name: "Aron Mutai",
-        pin: "1012"
-    },
+{
+id:"M12",
+name:"Aron Mutai",
+pin:"1012"
+},
 
-    {
-        id: "M13",
-        name: "Abinadab Kipngetich",
-        pin: "1013"
-    },
+{
+id:"M13",
+name:"Abinadab Kipngetich",
+pin:"1013"
+},
 
-    {
-        id: "M14",
-        name: "Denis Kirui",
-        pin: "1014"
-    }
+{
+id:"M14",
+name:"Denis Kirui",
+pin:"1014"
+}
 
 ];
 
 
-/* =====================================================
+
+/* ==========================================
    ADMIN PIN
-===================================================== */
+========================================== */
 
 const ADMIN_PIN = "9999";
 
 
-/* =====================================================
-   CANDIDATES
-=====================================================
 
-   IMPORTANT RULE:
-
-   Chairperson:
-   1st winner = Chairperson
-   2nd winner = Vice Chairperson
-
-   Secretary:
-   1st winner = Secretary
-   2nd winner = Assistant Secretary
-
-   Treasurer:
-   1st winner = Treasurer
-   2nd winner = Assistant Treasurer
-
-   Time Keeper:
-   Winner = Time Keeper
-
-   Project Coordinator:
-   Winner = Project Coordinator
-===================================================== */
+/* ==========================================
+   ELECTION POSITIONS
+========================================== */
 
 const elections = {
 
-    chairperson: {
 
-        title: "Chairperson",
+chairperson:{
 
-        candidates: [
+title:"Chairperson",
 
-            "Enock Kiprono",
-            "Denis Kirui"
+candidates:[
 
-        ]
+"Enock Kiprono",
+"Denis Kirui"
 
-    },
+],
 
+roles:[
 
-    secretary: {
+"Chairperson",
+"Vice Chairperson"
 
-        title: "Secretary",
+]
 
-        candidates: [
-
-            "Amos Kipngetich",
-            "Victor Korir",
-            "Aron Mutai"
-
-        ]
-
-    },
+},
 
 
-    treasurer: {
 
-        title: "Treasurer",
+secretary:{
 
-        candidates: [
+title:"Secretary",
 
-            "Emmanuel Kipngetich",
-            "Evans Kiplangat"
+candidates:[
 
-        ]
+"Amos Kipngetich",
+"Victor Korir",
+"Aron Mutai"
 
-    },
+],
 
+roles:[
 
-    timeKeeper: {
+"Secretary",
+"Assistant Secretary"
 
-        title: "Time Keeper",
+]
 
-        candidates: [
-
-            "Nathan Rotich",
-            "Brenda Chepngeno"
-
-        ]
-
-    },
+},
 
 
-    projectCoordinator: {
 
-        title: "Project Coordinator",
+treasurer:{
 
-        candidates: [
+title:"Treasurer",
 
-            "Peter Kiprono",
-            "Gideon Kemboi",
-            "Abinadab Kipngetich"
+candidates:[
 
-        ]
+"Emmanuel Kipngetich",
+"Evans Kiplangat"
 
-    }
+],
+
+roles:[
+
+"Treasurer",
+"Assistant Treasurer"
+
+]
+
+},
+
+
+
+timeKeeper:{
+
+title:"Time Keeper",
+
+candidates:[
+
+"Nathan Rotich",
+"Brenda Chepngeno"
+
+],
+
+roles:[
+
+"Time Keeper"
+
+]
+
+},
+
+
+
+projectCoordinator:{
+
+title:"Project Coordinator",
+
+candidates:[
+
+"Peter Kiprono",
+"Gideon Kemboi",
+"Abinadab Kipngetich"
+
+],
+
+roles:[
+
+"Project Coordinator"
+
+]
+
+}
 
 };
 
 
-/* =====================================================
-   CURRENT MEMBER
-===================================================== */
+
+/* ==========================================
+   VARIABLES
+========================================== */
+
+const STORAGE_KEY =
+"youth_group_election_2026_votes";
 
 let currentMember = null;
 
 
-/* =====================================================
-   ADD MEMBERS TO DROPDOWN
-===================================================== */
 
-const memberSelect =
-    document.getElementById("memberSelect");
+/* ==========================================
+   SHORT ID FUNCTION
+========================================== */
+
+function $(id){
+
+return document.getElementById(id);
+
+}
+
+
+
+/* ==========================================
+   GET VOTES
+========================================== */
+
+function getVotes(){
+
+try{
+
+return JSON.parse(
+
+localStorage.getItem(STORAGE_KEY)
+|| "{}"
+
+);
+
+}
+
+catch(error){
+
+return {};
+
+}
+
+}
+
+
+
+/* ==========================================
+   SAVE VOTES
+========================================== */
+
+function saveVotes(votes){
+
+localStorage.setItem(
+
+STORAGE_KEY,
+
+JSON.stringify(votes)
+
+);
+
+}
+
+
+
+/* ==========================================
+   LOAD MEMBERS
+========================================== */
+
+function fillMembers(){
+
+const select =
+$("memberSelect");
 
 
 members.forEach(function(member){
 
-    const option =
-        document.createElement("option");
+const option =
+document.createElement("option");
 
-    option.value =
-        member.id;
 
-    option.textContent =
-        member.id + " - " + member.name;
+option.value =
+member.id;
 
-    memberSelect.appendChild(option);
+
+option.textContent =
+member.id +
+" - " +
+member.name;
+
+
+select.appendChild(option);
+
+});
+
+}
+
+
+
+/* ==========================================
+   MEMBER LOGIN
+========================================== */
+
+function memberLogin(){
+
+const id =
+$("memberSelect").value;
+
+
+const pin =
+$("memberPin").value.trim();
+
+
+const message =
+$("loginMsg");
+
+
+message.textContent = "";
+
+
+if(!id || !pin){
+
+message.textContent =
+"Please select your name and enter the PIN.";
+
+return;
+
+}
+
+
+const member =
+members.find(function(m){
+
+return m.id === id;
 
 });
 
 
-/* =====================================================
-   GET SAVED VOTES
-===================================================== */
+if(!member){
 
-function getVotes(){
+message.textContent =
+"Member not found.";
 
-    return JSON.parse(
-        localStorage.getItem(
-            "youthGroupElectionVotes"
-        ) || "{}"
-    );
+return;
 
 }
 
 
-/* =====================================================
-   SAVE VOTES
-===================================================== */
+if(member.pin !== pin){
 
-function saveVotes(votes){
+message.textContent =
+"Incorrect Member ID or PIN.";
 
-    localStorage.setItem(
-        "youthGroupElectionVotes",
-        JSON.stringify(votes)
-    );
+return;
 
 }
 
 
-/* =====================================================
-   MEMBER LOGIN
-===================================================== */
-
-function memberLogin(){
-
-    const memberID =
-        document.getElementById(
-            "memberSelect"
-        ).value;
+const votes =
+getVotes();
 
 
-    const pin =
-        document.getElementById(
-            "memberPin"
-        ).value;
+if(votes[id]){
 
+message.textContent =
+"This member has already voted on this browser.";
 
-    const message =
-        document.getElementById(
-            "loginMsg"
-        );
-
-
-    message.textContent = "";
-
-
-    if(!memberID || !pin){
-
-        message.textContent =
-            "Please select your name and enter your PIN.";
-
-        return;
-
-    }
-
-
-    const member =
-        members.find(
-            function(m){
-                return m.id === memberID;
-            }
-        );
-
-
-    if(!member){
-
-        message.textContent =
-            "Member not found.";
-
-        return;
-
-    }
-
-
-    if(member.pin !== pin){
-
-        message.textContent =
-            "Incorrect PIN.";
-
-        return;
-
-    }
-
-
-    const votes =
-        getVotes();
-
-
-    if(votes[memberID]){
-
-        message.textContent =
-            "This member has already voted.";
-
-        return;
-
-    }
-
-
-    currentMember =
-        member;
-
-
-    document
-        .getElementById("loginCard")
-        .classList
-        .add("hidden");
-
-
-    document
-        .getElementById("voteCard")
-        .classList
-        .remove("hidden");
-
-
-    document
-        .getElementById("voterInfo")
-        .innerHTML =
-        "<b>Voting as:</b> "
-        + member.name
-        + " ("
-        + member.id
-        + ")";
-
-
-    buildBallot();
+return;
 
 }
 
 
-/* =====================================================
-   BUILD BALLOT
-===================================================== */
+currentMember =
+member;
+
+
+$("loginCard")
+.classList
+.add("hidden");
+
+
+$("voteCard")
+.classList
+.remove("hidden");
+
+
+$("voterInfo").innerHTML =
+
+"<b>Voting as:</b> " +
+
+escapeHTML(member.name) +
+
+" (" +
+
+member.id +
+
+")";
+
+
+buildBallot();
+
+}
+
+
+
+/* ==========================================
+   BUILD VOTING FORM
+========================================== */
 
 function buildBallot(){
 
-    const form =
-        document.getElementById(
-            "voteForm"
-        );
+const form =
+$("voteForm");
 
 
-    form.innerHTML = "";
+form.innerHTML = "";
 
 
-    Object.entries(elections)
-    .forEach(function([key,election]){
+Object.keys(elections)
+.forEach(function(key){
 
-        const section =
-            document.createElement(
-                "section"
-            );
+const election =
+elections[key];
 
 
-        section.className =
-            "position";
+const section =
+document.createElement("section");
 
 
-        const heading =
-            document.createElement("h3");
+section.className =
+"position";
 
 
-        heading.textContent =
-            election.title;
+const heading =
+document.createElement("h3");
 
 
-        section.appendChild(
-            heading
-        );
+heading.textContent =
+election.title;
 
 
-        election.candidates
-        .forEach(function(candidate,index){
-
-            const label =
-                document.createElement(
-                    "label"
-                );
+section.appendChild(
+heading
+);
 
 
-            label.className =
-                "candidate";
+election.candidates
+.forEach(function(candidate,index){
+
+const label =
+document.createElement("label");
 
 
-            const radio =
-                document.createElement(
-                    "input"
-                );
+label.className =
+"candidate";
 
 
-            radio.type =
-                "radio";
+const radio =
+document.createElement("input");
 
 
-            radio.name =
-                key;
+radio.type =
+"radio";
 
 
-            radio.value =
-                candidate;
+radio.name =
+key;
 
 
-            radio.required =
-                index === 0;
+radio.value =
+candidate;
 
 
-            const text =
-                document.createElement(
-                    "span"
-                );
+radio.required =
+(index === 0);
 
 
-            text.textContent =
-                candidate;
+const text =
+document.createElement("span");
 
 
-            label.appendChild(
-                radio
-            );
+text.textContent =
+candidate;
 
 
-            label.appendChild(
-                text
-            );
+label.appendChild(
+radio
+);
 
 
-            section.appendChild(
-                label
-            );
-
-        });
+label.appendChild(
+text
+);
 
 
-        form.appendChild(
-            section
-        );
+section.appendChild(
+label
+);
 
-    });
-
-
-    const button =
-        document.createElement(
-            "button"
-        );
+});
 
 
-    button.type =
-        "submit";
+form.appendChild(
+section
+);
+
+});
 
 
-    button.textContent =
-        "🗳️ Submit My Vote";
+const button =
+document.createElement("button");
 
 
-    form.appendChild(
-        button
-    );
+button.type =
+"submit";
 
 
-    form.onsubmit =
-        submitVote;
+button.textContent =
+"🗳️ Submit My Vote";
+
+
+form.appendChild(
+button
+);
 
 }
 
 
-/* =====================================================
+
+/* ==========================================
    SUBMIT VOTE
-===================================================== */
+========================================== */
 
 function submitVote(event){
 
-    event.preventDefault();
+event.preventDefault();
 
 
-    if(!currentMember){
+if(!currentMember){
 
-        return;
-
-    }
-
-
-    const votes =
-        getVotes();
-
-
-    if(votes[currentMember.id]){
-
-        document
-            .getElementById("voteMsg")
-            .textContent =
-            "This member has already voted.";
-
-        return;
-
-    }
-
-
-    const selections = {};
-
-
-    for(
-        const key
-        of Object.keys(elections)
-    ){
-
-        const selected =
-            document.querySelector(
-                'input[name="' +
-                key +
-                '"]:checked'
-            );
-
-
-        if(!selected){
-
-            document
-                .getElementById("voteMsg")
-                .textContent =
-                "Please select a candidate for "
-                + elections[key].title
-                + ".";
-
-            return;
-
-        }
-
-
-        selections[key] =
-            selected.value;
-
-    }
-
-
-    votes[currentMember.id] = {
-
-        memberID:
-            currentMember.id,
-
-        memberName:
-            currentMember.name,
-
-        selections:
-            selections,
-
-        submittedAt:
-            new Date().toLocaleString()
-
-    };
-
-
-    saveVotes(votes);
-
-
-    document
-        .getElementById("voteCard")
-        .classList
-        .add("hidden");
-
-
-    document
-        .getElementById("doneCard")
-        .classList
-        .remove("hidden");
-
-
-    currentMember = null;
+return;
 
 }
 
 
-/* =====================================================
+const votes =
+getVotes();
+
+
+if(votes[currentMember.id]){
+
+$("voteMsg").textContent =
+"This member has already voted.";
+
+return;
+
+}
+
+
+const selections = {};
+
+
+for(
+const key
+of Object.keys(elections)
+){
+
+const selected =
+document.querySelector(
+
+'input[name="' +
+key +
+'"]:checked'
+
+);
+
+
+if(!selected){
+
+$("voteMsg").textContent =
+
+"Please choose a candidate for " +
+
+elections[key].title +
+
+".";
+
+return;
+
+}
+
+
+selections[key] =
+selected.value;
+
+}
+
+
+
+votes[currentMember.id] = {
+
+memberID:
+currentMember.id,
+
+memberName:
+currentMember.name,
+
+selections:
+selections,
+
+submittedAt:
+new Date().toLocaleString()
+
+};
+
+
+saveVotes(votes);
+
+
+$("voteCard")
+.classList
+.add("hidden");
+
+
+$("doneCard")
+.classList
+.remove("hidden");
+
+
+currentMember = null;
+
+}
+
+
+
+/* ==========================================
    ADMIN LOGIN
-===================================================== */
+========================================== */
 
 function adminLogin(){
 
-    const pin =
-        prompt(
-            "Enter Admin PIN:"
-        );
+const pin =
+prompt("Enter Admin PIN:");
 
 
-    if(pin !== ADMIN_PIN){
+if(pin !== ADMIN_PIN){
 
-        alert(
-            "Incorrect Admin PIN."
-        );
+alert("Incorrect Admin PIN.");
 
-        return;
-
-    }
-
-
-    document
-        .getElementById("loginCard")
-        .classList
-        .add("hidden");
-
-
-    document
-        .getElementById("voteCard")
-        .classList
-        .add("hidden");
-
-
-    document
-        .getElementById("doneCard")
-        .classList
-        .add("hidden");
-
-
-    document
-        .getElementById("adminCard")
-        .classList
-        .remove("hidden");
-
-
-    showResults();
+return;
 
 }
 
 
-/* =====================================================
+$("loginCard")
+.classList
+.add("hidden");
+
+
+$("voteCard")
+.classList
+.add("hidden");
+
+
+$("doneCard")
+.classList
+.add("hidden");
+
+
+$("adminCard")
+.classList
+.remove("hidden");
+
+
+showResults();
+
+}
+
+
+
+/* ==========================================
    SHOW RESULTS
-===================================================== */
+========================================== */
 
 function showResults(){
 
-    const votes =
-        getVotes();
+const votes =
+getVotes();
 
 
-    const totalVotes =
-        Object.keys(votes).length;
+const total =
+Object.keys(votes).length;
 
 
-    document
-        .getElementById("voteCount")
-        .innerHTML =
-        "<b>"
-        + totalVotes
-        + " of 14 members have voted.</b>";
+$("voteCount").innerHTML =
 
+"<b>" +
 
-    let resultsHTML = "";
+total +
 
+" of 14 members have voted.</b>";
 
-    Object.entries(elections)
-    .forEach(function([key,election]){
 
-        const counts = {};
+let html = "";
 
 
-        election.candidates
-        .forEach(function(candidate){
+Object.keys(elections)
+.forEach(function(key){
 
-            counts[candidate] = 0;
+const election =
+elections[key];
 
-        });
 
+const counts = {};
 
-        Object.values(votes)
-        .forEach(function(vote){
 
-            const choice =
-                vote.selections[key];
+election.candidates
+.forEach(function(candidate){
 
+counts[candidate] = 0;
 
-            if(choice){
+});
 
-                counts[choice] =
-                    (counts[choice] || 0) + 1;
 
-            }
+Object.values(votes)
+.forEach(function(vote){
 
-        });
+if(
+vote.selections &&
+vote.selections[key]
+){
 
+const choice =
+vote.selections[key];
 
-        const ranked =
-            Object.entries(counts)
-            .sort(function(a,b){
 
-                return b[1] - a[1];
+counts[choice] =
+(counts[choice] || 0) + 1;
 
-            });
+}
 
+});
 
-        resultsHTML +=
-            '<div class="result">';
 
+const ranked =
+Object.entries(counts)
+.sort(function(a,b){
 
-        resultsHTML +=
-            "<h3>"
-            + election.title
-            + "</h3>";
+if(b[1] !== a[1]){
 
+return b[1] - a[1];
 
-        ranked.forEach(
-            function(result,index){
+}
 
-                const candidate =
-                    result[0];
+return a[0].localeCompare(a[0]);
 
-                const count =
-                    result[1];
+});
 
 
-                let role = "";
+html +=
 
+'<div class="result">';
 
-                if(
-                    key === "chairperson"
-                    &&
-                    index === 0
-                ){
 
-                    role =
-                        "Chairperson";
+html +=
 
-                }
+"<h3>" +
 
+escapeHTML(election.title) +
 
-                if(
-                    key === "chairperson"
-                    &&
-                    index === 1
-                ){
+"</h3>";
 
-                    role =
-                        "Vice Chairperson";
 
-                }
+ranked.forEach(function(item,index){
 
+let role = "";
 
-                if(
-                    key === "secretary"
-                    &&
-                    index === 0
-                ){
 
-                    role =
-                        "Secretary";
+if(
+index <
+election.roles.length
+){
 
-                }
+role =
+election.roles[index];
 
+}
 
-                if(
-                    key === "secretary"
-                    &&
-                    index === 1
-                ){
 
-                    role =
-                        "Assistant Secretary";
+html +=
 
-                }
+"<p>" +
 
+"<b>" +
 
-                if(
-                    key === "treasurer"
-                    &&
-                    index === 0
-                ){
+(index + 1) +
 
-                    role =
-                        "Treasurer";
+". " +
 
-                }
+escapeHTML(item[0]) +
 
+"</b> — " +
 
-                if(
-                    key === "treasurer"
-                    &&
-                    index === 1
-                ){
+item[1] +
 
-                    role =
-                        "Assistant Treasurer";
+" vote(s)";
 
-                }
 
+if(role){
 
-                if(
-                    key === "timeKeeper"
-                    &&
-                    index === 0
-                ){
+html +=
 
-                    role =
-                        "Time Keeper";
+' <span class="badge">' +
 
-                }
+escapeHTML(role) +
 
+"</span>";
 
-                if(
-                    key === "projectCoordinator"
-                    &&
-                    index === 0
-                ){
+}
 
-                    role =
-                        "Project Coordinator";
 
-                }
+html +=
 
+"</p>";
 
-                resultsHTML +=
-                    "<p>"
-                    + "<b>"
-                    + (index + 1)
-                    + ". "
-                    + candidate
-                    + "</b>"
-                    + " — "
-                    + count
-                    + " vote(s)";
+});
 
 
-                if(role){
+html +=
+"</div>";
 
-                    resultsHTML +=
-                        ' <span class="badge">'
-                        + role
-                        + "</span>";
+});
 
-                }
 
+$("results").innerHTML =
+html;
 
-                resultsHTML +=
-                    "</p>";
 
-            }
-        );
 
+/* ==========================================
+   MEMBER CHOICES TABLE
+========================================== */
 
-        resultsHTML +=
-            "</div>";
+let table =
 
-    });
+"<table>" +
 
+"<tr>" +
 
-    document
-        .getElementById("results")
-        .innerHTML =
-        resultsHTML;
+"<th>Member</th>" +
 
+"<th>Chairperson</th>" +
 
-    /* =========================================
-       MEMBER CHOICES TABLE
-    ========================================= */
+"<th>Secretary</th>" +
 
-    let table =
+"<th>Treasurer</th>" +
 
-        "<table>" +
+"<th>Time Keeper</th>" +
 
-        "<tr>" +
+"<th>Project Coordinator</th>" +
 
-        "<th>Member</th>" +
+"<th>Submitted</th>" +
 
-        "<th>Chairperson</th>" +
+"</tr>";
 
-        "<th>Secretary</th>" +
 
-        "<th>Treasurer</th>" +
+Object.values(votes)
+.forEach(function(vote){
 
-        "<th>Time Keeper</th>" +
+table +=
 
-        "<th>Projec
+"<tr>";
+
+
+table +=
+
+"<td>" +
+
+escapeHTML(vote.memberName) +
+
+" (" +
+
+escapeHTML(vote.memberID) +
+
+")" +
+
+"</td>";
+
+
+Object.keys(elections)
+.forEach(function(key){
+
+table +=
+
+"<td>" +
+
+escapeHTML(
+
+vote.selections[key] || "—"
+
+) +
+
+"</td>";
+
+});
+
+
+table +=
+
+"<td>" +
+
+escapeHTML(
+
+vote.submittedAt || ""
+
+) +
+
+"</td>";
+
+
+table +=
+
+"</tr>";
+
+});
+
+
+table +=
+
+"</table>";
+
+
+if(total === 0){
+
+table =
+
+"<p>No votes have been submitted yet.</p>";
+
+}
+
+
+$("choices").innerHTML =
+table;
+
+}
+
+
+
+/* ==========================================
+   EXPORT RESULTS
+========================================== */
+
+function exportResults(){
+
+const votes =
+getVotes();
+
+
+let csv =
+
+"Member ID," +
+
+"Member Name," +
+
+"Chairperson," +
+
+"Secretary," +
+
+"Treasurer," +
+
+"Time Keeper," +
+
+"Project Coordinator," +
+
+"Submitted At\n";
+
+
+Object.values(votes)
+.forEach(function(vote){
+
+const row = [
+
+vote.memberID,
+
+vote.memberName,
+
+vote.selections.chairperson,
+
+vote.selections.secretary,
+
+vote.selections.treasurer,
+
+vote.selections.timeKeeper,
+
+vote.selections.projectCoordinator,
+
+vote.submittedAt
+
+];
+
+
+csv +=
+
+row
+.map(function(value){
+
+return '"' +
+
+String(value)
+.replace(/"/g,'""') +
+
+'"';
+
+})
+.join(",") +
+
+"\n";
+
+});
+
+
+const blob =
+new Blob(
+
+[csv],
+
+{
+type:"text/csv;charset=utf-8"
+}
+
+);
+
+
+const url =
+URL.createObjectURL(blob);
+
+
+const link =
+document.createElement("a");
+
+
+link.href =
+url;
+
+
+link.download =
+"youth-group-election-results.csv";
+
+
+document.body.appendChild(link);
+
+
+link.click();
+
+
+link.remove();
+
+
+URL.revokeObjectURL(url);
+
+}
+
+
+
+/* ==========================================
+   RESET ELECTION
+========================================== */
+
+function resetElection(){
+
+const pin =
+prompt("Enter Admin PIN:");
+
+
+if(pin !== ADMIN_PIN){
+
+alert("Incorrect Admin PIN.");
+
+return;
+
+}
+
+
+if(
+!confirm(
+"Delete all votes stored in this browser?"
+)
+){
+
+return;
+
+}
+
+
+localStorage.removeItem(
+STORAGE_KEY
+);
+
+
+showResults();
+
+
+alert(
+"Votes on this browser have been reset."
+);
+
+}
+
+
+
+/* ==========================================
+   SECURITY / TEXT ESCAPE
+========================================== */
+
+function escapeHTML(value){
+
+return String(value)
+
+.replace(/&/g,"&amp;")
+
+.replace(/</g,"&lt;")
+
+.replace(/>/g,"&gt;")
+
+.replace(/"/g,"&quot;")
+
+.replace(/'/g,"&#039;");
+
+}
+
+
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+$("loginBtn")
+.addEventListener(
+"click",
+memberLogin
+);
+
+
+$("voteForm")
+.addEventListener(
+"submit",
+submitVote
+);
+
+
+$("adminBtn")
+.addEventListener(
+"click",
+adminLogin
+);
+
+
+$("exportBtn")
+.addEventListener(
+"click",
+exportResults
+);
+
+
+$("resetBtn")
+.addEventListener(
+"click",
+resetElection
+);
+
+
+$("returnBtn")
+.addEventListener(
+"click",
+function(){
+
+location.reload();
+
+}
+);
+
+
+
+/* ==========================================
+   START WEBSITE
+========================================== */
+
+fillMembers();
+
+</script>
+
+</body>
+    </html>
